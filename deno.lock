@@ -2,7 +2,6 @@
   "version": "5",
   "specifiers": {
     "npm:@deno/svelte-adapter@~0.2.1": "0.2.2_@sveltejs+kit@3.0.0_@sveltejs+vite-plugin-svelte@7.3.1_@types+node@26.6.4_svelte@5.57.1_typescript@6.0.3_vite@8.3.2",
-    "npm:@dinero.js/currencies@2.0.0-alpha.1": "2.0.0-alpha.1",
     "npm:@skeletonlabs/skeleton-svelte@^5.0.1": "5.0.1_svelte@5.57.1",
     "npm:@skeletonlabs/skeleton@^5.0.1": "5.0.1_tailwindcss@4.3.3",
     "npm:@sveltejs/kit@3": "3.0.0_@sveltejs+vite-plugin-svelte@7.3.1_svelte@5.57.1_typescript@6.0.3_vite@8.3.2_@types+node@26.6.4",
@@ -15,6 +14,7 @@
     "npm:svelte@^5.56.7": "5.57.1",
     "npm:tailwindcss@^4.3.3": "4.3.3",
     "npm:typescript@^6.0.3": "6.0.3",
+    "npm:vite@*": "8.3.2_@types+node@26.6.4",
     "npm:vite@^8.3.0": "8.3.2_@types+node@26.6.4"
   },
   "npm": {
@@ -30,10 +30,6 @@
         "@deno/experimental-route-config",
         "@sveltejs/kit"
       ]
-    },
-    "@dinero.js/currencies@2.0.0-alpha.1": {
-      "integrity": "sha512-JoKY6q3AOm2II44qLp6VMGn+j+p6QC39m3DFogKZXsucWIIvzt7c2v04DZrrHWLNnDYNzITOnbQ7f2pGbONjig==",
-      "deprecated": true
     },
     "@floating-ui/core@1.8.0": {
       "integrity": "sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==",
@@ -852,8 +848,8 @@
     "dinero.js@2.0.2": {
       "integrity": "sha512-d+4egJTvNinkb66KSed11Daqz6MWaOHzyalLu6h3p+BLrsmwKFjHjvOKivOWeM7WyoX89te+xx4cKI6zrDtCfQ=="
     },
-    "enhanced-resolve@5.25.1": {
-      "integrity": "sha512-nGXts5znJzmWPu+mIE9izCOzdg63oJca2mDzGWWTth7sr4aCToKcoyFVBQwN75Ij5Pf6p510EwkTqViTRzDV+w==",
+    "enhanced-resolve@5.26.0": {
+      "integrity": "sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw==",
       "dependencies": [
         "graceful-fs",
         "tapable"
@@ -1239,7 +1235,6 @@
   "workspace": {
     "dependencies": [
       "npm:@deno/svelte-adapter@~0.2.1",
-      "npm:@dinero.js/currencies@2.0.0-alpha.1",
       "npm:@skeletonlabs/skeleton-svelte@^5.0.1",
       "npm:@skeletonlabs/skeleton@^5.0.1",
       "npm:@sveltejs/kit@3",

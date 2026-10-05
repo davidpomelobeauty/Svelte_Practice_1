@@ -2,9 +2,5 @@
   "name": "practice3",
   "private": true,
   "version": "0.0.1",
-  "type": "module",
-  "imports": {
-    "#lib": "./src/lib/index.js",
-    "#lib/*": "./src/lib/*"
-  }
+  "type": "module"
 }

@@ -1,11 +1,18 @@
 <script lang="ts">
-	import favicon from '#lib/assets/favicon.svg';
+  import '../app.css';
+  import Header from './Header.svelte';
+  import { Toaster } from '#lib';
 
-	let { children } = $props();
+  let { children } = $props();
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<div class="app-container">
+  <Header />
+  <main class="content">
+    <div class="bg-surface-50-950 transition-colors duration-200">
+      {@render children?.()}
+    </div>
+  </main>
+</div>
 
-{@render children()}
+<Toaster />

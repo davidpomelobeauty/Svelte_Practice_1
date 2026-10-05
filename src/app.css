@@ -1,0 +1,9 @@
+/* src/routes/app.css */
+@import 'tailwindcss';
+
+/* Skeleton UI v5 디자인 시스템 핵심 및 컴포넌트 레이어 로드 */
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+
+/* 프로젝트에 적용할 기본 내장 테마 임포트 (예: cerberus, pop, modern 등) */
+@import '@skeletonlabs/skeleton/themes/pine';

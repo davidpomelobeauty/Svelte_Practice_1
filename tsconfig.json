@@ -11,6 +11,8 @@
     "strict": true,
     "moduleResolution": "bundler"
   },
-  "include": ["src", "test", "*"],
-  "exclude": ["src/service-worker", "node_modules/**", ".svelte-kit/**", "build/**"]
+  "paths": {
+    "#lib": ["./src/lib/index.ts"],
+    "#lib/*": ["./src/lib/*"]
+  }
 }

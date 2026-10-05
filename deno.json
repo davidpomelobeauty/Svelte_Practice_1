@@ -7,8 +7,9 @@
     "check:watch": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "imports": {
+    "#lib": "./src/lib/index.ts",
+    "#lib/*": "./src/lib/*",
     "@deno/svelte-adapter": "npm:@deno/svelte-adapter@^0.2.1",
-    "@dinero.js/currencies": "npm:@dinero.js/currencies@2.0.0-alpha.1",
     "@skeletonlabs/skeleton": "npm:@skeletonlabs/skeleton@^5.0.1",
     "@skeletonlabs/skeleton-svelte": "npm:@skeletonlabs/skeleton-svelte@^5.0.1",
     "@sveltejs/kit": "npm:@sveltejs/kit@^3.0.0",
@@ -24,5 +25,7 @@
     "vite": "npm:vite@^8.3.0"
   },
   "nodeModulesDir": "auto",
-  "allowScripts": ["npm:svelte-kit"]
+  "allowScripts": ["npm:svelte-kit"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", ".svelte-kit", "build", ".deno"]
 }
