@@ -14,5 +14,11 @@
   "paths": {
     "#lib": ["./src/lib/index.ts"],
     "#lib/*": ["./src/lib/*"]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    ".deno",
+    ".svelte-kit",
+    "build" //
+  ]
 }

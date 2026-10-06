@@ -10,6 +10,7 @@
     "#lib": "./src/lib/index.ts",
     "#lib/*": "./src/lib/*",
     "@deno/svelte-adapter": "npm:@deno/svelte-adapter@^0.2.1",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^2.0.4",
     "@skeletonlabs/skeleton": "npm:@skeletonlabs/skeleton@^5.0.1",
     "@skeletonlabs/skeleton-svelte": "npm:@skeletonlabs/skeleton-svelte@^5.0.1",
     "@sveltejs/kit": "npm:@sveltejs/kit@^3.0.0",
@@ -24,8 +25,13 @@
     "typescript": "npm:typescript@^6.0.3",
     "vite": "npm:vite@^8.3.0"
   },
-  "nodeModulesDir": "auto",
   "allowScripts": ["npm:svelte-kit"],
+  "nodeModulesDir": "auto",
   "include": ["src/**/*"],
-  "exclude": ["node_modules", ".svelte-kit", "build", ".deno"]
+  "exclude": ["node_modules", ".svelte-kit", "build", ".deno"],
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "deno.ns"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "svelte"
+  }
 }
